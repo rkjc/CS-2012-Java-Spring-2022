@@ -1,0 +1,22 @@
+ 
+bin/
+.git
+.metadata
+.classpath
+.project
+*.backup
+*.kate-swp
+*.old
+.directory
+
+
+# a bash function for doing quick gitHub updates
+
+#  cupdate() {  git add . ; git commit -m "quick code update" ; git push origin main ; } 
+
+# note to self because I always forget this one when resetting the .gitignore
+#  git rm -r --cached . 
+
+#  git ls-files --others --exclude-standard
+
+# list by only name$  ls -1a

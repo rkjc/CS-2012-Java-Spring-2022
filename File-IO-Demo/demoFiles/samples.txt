@@ -1,0 +1,14 @@
+apples
+oranges
+grapes
+hammers
+lamps
+cars
+dogs
+cats
+mice
+socks
+keyboards
+pliers
+cards
+

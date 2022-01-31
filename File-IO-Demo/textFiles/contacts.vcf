@@ -1,0 +1,49 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Adam Bellman
+N:Bellman;Adam;;;
+EMAIL;TYPE=INTERNET:adam@zonkers.com
+TEL;TYPE=HOME:818-123-9988
+item1.URL:abellman.com
+item1.X-ABLabel:homePage
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Barney Rubble
+N:Rubble;Barney;;;
+EMAIL;TYPE=INTERNET:Barney@hotmail.com
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Karnen Oswald
+N:Oswald;Karnen;DMV;;
+TEL;TYPE=CELL:+1 314-909-2332
+item1.ORG:Csula
+item1.X-ABLabel:Other
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Delton Ortiz
+N:Ortiz;Delton;;;
+EMAIL;TYPE=INTERNET;TYPE=HOME:delton@hotmail.com
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Laurin Jonson
+N:Jonson;Laurin;;;
+item1.EMAIL;TYPE=INTERNET:laurinjonson@gmail.com
+item1.X-ABLabel:
+item2.URL:http\://www.google.com/profiles/38375664838847657783834
+item2.X-ABLabel:PROFILE
+NOTE:SURF program Physics class summer 2011
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Treveran Ramirez
+N:Ramirez;Treveran;;;
+EMAIL;TYPE=INTERNET;TYPE=HOME:treveran9119@yahoo.com
+item1.EMAIL;TYPE=INTERNET:rtreveran101@gmail.com
+item1.X-ABLabel:
+item2.URL:http\://www.google.com/profiles/5897865746637845856
+item2.X-ABLabel:PROFILE
+END:VCARD 
