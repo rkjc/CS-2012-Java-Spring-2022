@@ -1,4 +1,4 @@
-package packageSimple;
+package package1Simple;
 
 import java.io.File;
 import java.util.Scanner;
