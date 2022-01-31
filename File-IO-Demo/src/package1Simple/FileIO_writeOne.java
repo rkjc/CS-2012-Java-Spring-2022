@@ -7,23 +7,22 @@ public class FileIO_writeOne {
 
 	public static void main(String[] args) {
 
-		// this will expect the file to exist in the default location
-		String pathString = "writeOneFile.txt";
-
 		try {
 			// create a File instance object that connects to the named file and path
-			File aFile = new File(pathString); // use (pathString , true) to append to the file
+			File aFile = new File("writeOneFile.txt"); // use (pathString , true) to append to the file
 
 			// create a PrintWriter for easy interaction with the FileWriter instance object
 			PrintWriter prtout = new PrintWriter(aFile);
 
 			// print this text into the file
 			prtout.println("hello text to file writing world!");
-
-			// make sure that all pending print operations were sent to the file
+			
+			System.out.println(aFile.getAbsolutePath());
+					
+			// make sure that all pending print operations were sent to the file before closing
 			prtout.flush();
 
-			// clean up the resources used
+			// clean up the resources used, close the PrintWriter
 			prtout.close();
 
 		} catch (Exception e) {

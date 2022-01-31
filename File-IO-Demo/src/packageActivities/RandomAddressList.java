@@ -20,7 +20,7 @@ public class RandomAddressList {
 		
 		// --- read files ---
 		
-		// makeing File objects to hold the file names/paths
+		// making File objects to hold the file names/paths
 		File firstNameFile = new File("demoFiles/firstNames.txt"); // File to read from
 		File lastNameFile = new File("demoFiles/lastNames.txt"); // File to read from
 		File areaCodeFile = new File("demoFiles/areaCodes.txt"); // File to read from

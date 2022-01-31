@@ -4,11 +4,10 @@ import java.io.File;
 import java.util.Scanner;
 
 public class FileIO_readOne {
-
 	public static void main(String[] args) {
 
 		// this will expect the file to exist in the default location
-		String pathString = "firstNames.txt";
+		String pathString = "fileToBeRead.txt";
 		
 		try {		
 			//create a File instance object that connects to the named file and path
@@ -29,6 +28,5 @@ public class FileIO_readOne {
 			// if it breaks catch and print out what went wrong
 			System.out.println(x);
 		} 
-
 	}
 }

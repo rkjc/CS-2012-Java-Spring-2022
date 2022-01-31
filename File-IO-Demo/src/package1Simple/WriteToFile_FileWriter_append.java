@@ -9,7 +9,7 @@ public class WriteToFile_FileWriter_append {
 	public static void main(String[] args) {
 
 		// this will expect the file to exist in the default location
-		String pathString = "testFile01.txt";
+		String pathString = "appendedFile.txt";
 
 		try {
 			// create a FileWriter instance object that connects to the named file and path
