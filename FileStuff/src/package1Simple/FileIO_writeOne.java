@@ -10,15 +10,12 @@ public class FileIO_writeOne {
 			// create a File instance object that connects to the named file and path
 			// use File(pathString , true) to append to the file, default is to overwrite
 			File aFile = new File("writeOneFile.txt");
-			
-			// create a PrintWriter for easy interaction with the FileWriter instance object
-			PrintWriter prtout = new PrintWriter(aFile); 
 
-			System.out.println("yes I'm working");
-			
+			// create a PrintWriter for easy interaction with the FileWriter instance object
+			PrintWriter prtout = new PrintWriter(aFile);
+
 			// print this text into the file
-			prtout.println("hello text to file writing world!\nnew second line");	
-			prtout.println("more more more stuff");
+			prtout.println("hello text to file writing world!");		
 					
 			// make sure that all pending print operations were sent to the file before closing
 			prtout.flush();
@@ -30,6 +27,5 @@ public class FileIO_writeOne {
 			// if something breaks catch and print out what went wrong
 			System.err.println(e);
 		}
-	
 	}
 }

@@ -7,7 +7,7 @@ public class FileIO_readOne {
 	public static void main(String[] args) {
 
 		// this will expect the file to exist in the default location
-		String pathString = "writeOneFile.txt";
+		String pathString = "fileToBeRead.txt";
 		
 		try {		
 			//create a File instance object that connects to the named file and path
@@ -18,15 +18,7 @@ public class FileIO_readOne {
 
 			// this is very fragile and will break if the file is empty
 			String tempText = myScan.nextLine();
-			System.out.println(tempText);
 			
-			tempText = myScan.nextLine();
-			System.out.println(tempText);
-			
-			tempText = myScan.nextLine();
-			System.out.println(tempText);
-
-			tempText = myScan.nextLine();
 			System.out.println(tempText);
 
 			// clean up the open resources
@@ -34,7 +26,6 @@ public class FileIO_readOne {
 
 		} catch (Exception x) {
 			// if it breaks catch and print out what went wrong
-			System.out.println("yep it broke");
 			System.out.println(x);
 		} 
 	}
