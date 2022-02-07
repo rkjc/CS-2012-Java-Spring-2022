@@ -1,0 +1,3 @@
+hello text to file writing world!
+new second line
+more more more stuff

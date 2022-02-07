@@ -26,3 +26,7 @@ bin/
 
 # list by only name$  ls -1a
 
+#*have to run this every time terminal is started (need to script this)*
+# eval "$(ssh-agent -s)" 
+# ssh-add ~/.ssh/id_ed25519_github  
+# testing:    ssh -T git@github.com 
