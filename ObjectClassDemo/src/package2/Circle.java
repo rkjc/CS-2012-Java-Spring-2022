@@ -1,4 +1,4 @@
-package package1;
+package package2;
 
 public class Circle {
 
@@ -6,7 +6,9 @@ public class Circle {
 	public String color;
 	
 	// -----------------------------------
-	public Circle() {
+
+	public Circle() {	
+		System.out.println("in the constructor");
 	}
 	
 	public Circle(double inRad) {
@@ -17,6 +19,7 @@ public class Circle {
 		radius = inRad;
 		this.color = color;
 	}
+	
 	
 	// -----------------------------------
 	
