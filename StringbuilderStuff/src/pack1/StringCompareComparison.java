@@ -13,6 +13,15 @@ public class StringCompareComparison {
 		
 		System.out.println("s1 == s2 is " + (s1 == s2));
 		System.out.println("s1 == s3 is " + (s1 == s3));
+		System.out.println("s1 == s2 is " + (s1.equals(s2)));
+		System.out.println("s1 == s3 is " + (s1.equals(s3)));
+		
+		System.out.println(s1.getClass());
+		
+		Triangle zondar = new Triangle();
+		
+		StringBuilder montey = new StringBuilder();
+		
 		
 	}
 

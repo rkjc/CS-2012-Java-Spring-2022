@@ -1,4 +1,4 @@
-package package3;
+package pack1;
 
 public class Triangle {
 	
@@ -7,6 +7,7 @@ public class Triangle {
 	public double width;
 
 	public Triangle() {
+
 	}
 
 }

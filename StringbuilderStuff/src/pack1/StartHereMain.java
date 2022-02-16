@@ -7,17 +7,24 @@ public class StartHereMain {
 		String message = new String("Welcome to Java");
 		System.out.println(message);	
 		
-		String luke = "happy joy";
+		String luke = "h";
 		
-		message = "text has been changed";
-		System.out.println(message);
+		luke = luke + "a";
+		luke = luke + "p";
+		luke = luke + "p";
+		luke = luke + "y";
 		
-		
-		int bob = 78;
-		Integer joe = 99;
-		
-		
+		System.out.println(luke);
 
+		StringBuilder sb1 = new StringBuilder();
+		sb1.append("h");
+		sb1.append("a");
+		sb1.append("p");
+		sb1.append("p");
+		sb1.append("y");
+		
+		System.out.println(sb1);
+		
 	}
 
 }
