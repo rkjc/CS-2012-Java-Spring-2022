@@ -9,7 +9,7 @@ public class FileIO_writeOne {
 		try {
 			// create a File instance object that connects to the named file and path
 			// use File(pathString , true) to append to the file, default is to overwrite
-			File aFile = new File("stuffStore/writeOneFileAreYouSure.txt");
+			File aFile = new File("writeOneFileAreYouSure.txt");
 			
 			// create a PrintWriter for easy interaction with the FileWriter instance object
 			PrintWriter prtout = new PrintWriter(aFile); 
