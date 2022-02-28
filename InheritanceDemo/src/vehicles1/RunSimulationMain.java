@@ -9,9 +9,8 @@ public class RunSimulationMain {
 		
 		Land vehic1 = new Land();
 		
-		System.out.println("colro= " + vehic1.color);
-		
-		
+		System.out.println("color= " + vehic1.color);
+			
 		
 	}
 
