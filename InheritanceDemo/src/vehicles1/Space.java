@@ -1,5 +1,5 @@
 package vehicles1;
 
-public class Space {
+public class Space extends Object {
 
 }

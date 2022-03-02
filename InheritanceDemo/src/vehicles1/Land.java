@@ -1,8 +1,20 @@
 package vehicles1;
 
-public class Land {
+public class Land extends Vehicle {
 	
-	public String color;
+
+	
+	// ------- Constructor ------
+	
+	public Land(){
+		super();
+		
+	}
+	
+	public Land(String inColor) {
+		super(inColor);
+		
+	}
 	
 	
 
