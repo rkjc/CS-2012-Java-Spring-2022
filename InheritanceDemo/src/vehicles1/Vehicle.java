@@ -28,8 +28,13 @@ public class Vehicle extends Object {
 		return objCount;
 	}
 	
+	
 	public String toString() {
 		return "vehicle color is " + color;
+	}
+	
+	protected String sayHappy() {
+		return "happy";
 	}
 	
 //	public boolean equals(Vehicle inVeh) {

@@ -1,5 +1,14 @@
 package vehicles1;
 
-public class Space extends Object {
+import Circle;
 
+public class Space extends Vehicle{
+
+	
+	int numWindows;
+	
+	public String sayHappy() {
+		return "really happy";
+	}
+	
 }

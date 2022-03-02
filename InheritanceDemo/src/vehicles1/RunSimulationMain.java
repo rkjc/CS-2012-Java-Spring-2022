@@ -7,10 +7,20 @@ public class RunSimulationMain {
 	public static void main(String[] args) {
 		// System.out.println("yep, it's running");
 
-		Land lanVeh1 = new Land("blue", 4);
-		Land lanVeh2 = new Land("green", 6);
-		Land lanVeh3 = new Land("blue", 4);
+		Vehicle lanVeh1 = new Land("blue", 4);
+		Vehicle lanVeh2 = new Land("green", 6);
+		Vehicle lanVeh3 = new Land("blue", 4);
 
+		
+		System.out.println( lanVeh1 );
+		
+		
+		
+		
+		
+		
+		
+		
 //		Vehicle[] vehArr = new Vehicle[3];
 //
 //		vehArr[0] = lanVeh1;
@@ -21,12 +31,30 @@ public class RunSimulationMain {
 
 		//vehArr[3] = vek1;
 		
-		ArrayList<Vehicle> vehArr2 = new ArrayList();
-		vehArr2.add(lanVeh1);
+//		ArrayList<Vehicle> vehArr2 = new ArrayList<Vehicle>();
+//		vehArr2.add(lanVeh1);
+//		vehArr2.add(lanVeh2);
+//		vehArr2.add(0, lanVeh3);
+//		
+//		vehArr2.add(new Land("orange", 14));
+//		
+//		vehArr2.add(new Space());
+//		Air plane1 = new Air("pruple");
+//		
+//		vehArr2.add(plane1);
+//		
+//		//System.out.println(vehArr2.get(0).equals(lanVeh3));	
+//		
+//		for (int i = 0; i < vehArr2.size(); i++) {
+//			if(vehArr2.get(i) instanceof Land )
+//				System.out.println( (  (Land)vehArr2.get(i)  ).numWheels );
+//			else if(vehArr2.get(i) instanceof Air )
+//				System.out.println( (  (Air)vehArr2.get(i)  ).numPropellers );
+//			else
+//				System.out.println("no clue");
+//		}
 		
-		for (int i = 0; i < 1; i++) {
-			System.out.println( vehArr2.get(i) );
-		}
+
 		
 
 		

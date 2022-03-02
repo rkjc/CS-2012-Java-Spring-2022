@@ -2,6 +2,7 @@ package shapes1;
 
 public class Circle extends GeometricObject {
 
+	public final Double PI = 3.14159;
 	
 	public Double radius = 1.0;
 	

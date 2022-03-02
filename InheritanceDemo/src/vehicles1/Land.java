@@ -22,7 +22,7 @@ public class Land extends Vehicle {
 	
 	public String toString() {
 		String tempStr = "Land vehicle, number of wheels = " + numWheels;
-		tempStr = tempStr + " " + super.toString();
+		tempStr = tempStr + "; " + super.toString();
 		return tempStr;
 	}
 
