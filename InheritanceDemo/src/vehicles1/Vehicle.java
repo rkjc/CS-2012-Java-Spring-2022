@@ -33,6 +33,7 @@ public class Vehicle extends Object {
 		return "vehicle color is " + color;
 	}
 	
+	
 	protected String sayHappy() {
 		return "happy";
 	}

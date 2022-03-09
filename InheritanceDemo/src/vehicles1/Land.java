@@ -2,7 +2,7 @@ package vehicles1;
 
 public class Land extends Vehicle {
 	
-	public int numWheels = 0;
+	default int numWheels = 0;
 	
 	// ------- Constructor ------
 	
