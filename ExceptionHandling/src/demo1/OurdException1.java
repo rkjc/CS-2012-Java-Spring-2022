@@ -1,5 +1,7 @@
 package demo1;
 
+import java.io.IOException;
+
 public class OurdException1 {
 	public static double radius = 0;
 
@@ -13,7 +15,8 @@ public class OurdException1 {
 
 			System.out.println("yep it ran. radius is: " + radius);
 
-			throw bob;
+			//throw bob;
+			throw new IOException("oooooops");
 
 		} catch (NullPointerException e) {
 			
@@ -35,7 +38,7 @@ public class OurdException1 {
 		System.out.println("the circle crashed but we are continuing on");
 	}
 
-	public static void setRadius(double newRadius) throws Exception {
+	public static void setRadius(double newRadius) {
 		if (newRadius >= 0)
 			radius = newRadius;
 		else

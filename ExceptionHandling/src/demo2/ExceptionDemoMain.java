@@ -8,14 +8,26 @@ public class ExceptionDemoMain {
 
 		System.out.println("running");
 
-		try {
+		try { 
+			
+			
+			//zondar.doDamage();
+			zondar.otherExcept();
+			
+			SecondClass.myCrasher();
+		
+			System.out.println("made it to the end");
 
-			zondar.doAThing();
 			
 		} catch (Exception e) {
-			System.out.println("kind of the wrong input, eh");
+			System.out.println("you broke something");
+			System.out.println(e);
+		} finally {
+			System.out.println("in the finally");
 		}
-
+		
+		System.out.println("rest of the program");
+		
 	}
 
 }
