@@ -7,5 +7,10 @@ public class LowerClass extends MedClass {
 		return 11;
 	}
 
+
+	public int getSpecialColor() {
+		return 255255000;
+	}
+
 	
 }

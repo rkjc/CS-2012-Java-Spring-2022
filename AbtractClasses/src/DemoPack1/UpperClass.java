@@ -1,6 +1,7 @@
 package DemoPack1;
 
-public abstract class UpperClass {
+public class UpperClass {
+	
 	
 	public int counter;
 	public String color;
@@ -8,5 +9,7 @@ public abstract class UpperClass {
 	public String sayHappy() {
 		return "happy";
 	}
+	
+
 	
 }
