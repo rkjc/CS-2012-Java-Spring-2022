@@ -11,4 +11,6 @@ public class BottomClass extends MedClass {
 		return 32;
 	}
 
+
+
 }

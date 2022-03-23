@@ -8,12 +8,21 @@ public class DemorunnerMain {
 		UpperClass zondar = new UpperClass();
 		
 		//MedClass xoe = new MedClass();
+		
+		LowerClass pixie = new LowerClass();
+		
+		pixie.printHello();
+		MedClass.printHello();
+		LowerClass.printHello();
 //		
 //		zondar.counter = 99;
 //		
 //		System.out.println(xoe.sayHappy());
 		
 //		System.out.println(dondar.favoriteFlavor);
+		
+		
+		
 	}
 
 }
