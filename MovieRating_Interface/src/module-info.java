@@ -1,0 +1,2 @@
+module movieRating_Interface {
+}
