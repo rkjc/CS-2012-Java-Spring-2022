@@ -5,9 +5,7 @@ import java.io.PrintWriter;
 
 public class FileIO_writeOne {
 	public static void main(String[] args) {
-
-		
-		
+	
 		try {
 			// create a File instance object that connects to the named file and path
 			// use File(pathString , true) to append to the file, default is to overwrite
@@ -16,7 +14,7 @@ public class FileIO_writeOne {
 			// create a PrintWriter for easy interaction with the FileWriter instance object
 			PrintWriter prtout = new PrintWriter(aFile); 
 
-			System.out.println("yes I'm working");
+			System.out.println("writeing out to file");
 			
 			// print this text into the file
 			prtout.println("hello text to file writing world!\nnew second line");	
@@ -25,13 +23,9 @@ public class FileIO_writeOne {
 			// make sure that all pending print operations were sent to the file before closing
 			prtout.flush();
 
-			
-
 		} catch (Exception e) {
 			// if something breaks catch and print out what went wrong
 			System.err.println(e);
-		} finally {
-;
 		}
 	
 	}
