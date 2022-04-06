@@ -33,11 +33,16 @@ public class House implements Cloneable { //, Comparable<House> {
 	  return tempH;
   }
   
+//  @Override
+//  public Object clone() {
+////	 House tempH = new House(id, area);
+////	 tempH.getWhenBuilt().setTime(this.whenBuilt.getTime());
+//	 return tempH;
+//  }
+//  
   @Override
-  public Object clone() {
-	 House tempH = new House(id, area);
-	 tempH.getWhenBuilt().setTime(this.whenBuilt.getTime());
-	 return tempH;
+  public Object clone() throws CloneNotSupportedException {
+		return super.clone();
   }
   
 

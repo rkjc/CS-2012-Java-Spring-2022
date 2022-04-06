@@ -1,8 +1,7 @@
 package DemoPack1;
 
-public class MedClass extends UpperClass implementing SomeInterface {
+public class MedClass extends UpperClass  {
 
-	
 	
 	public static void printHello() {
 		System.out.println("hey from the static print");
