@@ -1,4 +1,4 @@
-package apps1;
+package appBasicsFX;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -23,7 +23,10 @@ public class GUIexampleCodeMain extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			// create a new Text shape
-			Text messageText = new Text("Hello gooey World!\n Time to make some JavaFX GUI's");
+			String strText = "Hello gooey World!\n"
+					+ "Time to make some JavaFX GUI's\n"
+					+ "sent to you from the GUIexampleCodeMain\n";
+			Text messageText = new Text(strText);
 
 			// stack page
 			StackPane root = new StackPane();

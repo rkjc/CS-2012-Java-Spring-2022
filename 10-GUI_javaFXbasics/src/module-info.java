@@ -3,5 +3,6 @@ module guiJavaFXbasics {
     requires transitive javafx.graphics;
     requires transitive javafx.controls;
     
-    exports app2; 
+    exports appBasicsFX; 
+    exports appDemos; 
 }

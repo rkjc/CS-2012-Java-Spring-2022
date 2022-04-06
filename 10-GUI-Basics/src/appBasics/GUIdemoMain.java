@@ -20,17 +20,18 @@ public class GUIdemoMain extends Application {
 	}
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) { // the 'Stage' is the Window that will be opened on the desktop
         try {
-            // create a new Text shape
-            Text messageText = new Text("Hello gooey World!\n Time to make some JavaFX GUI's");
+            // create a new Text (Text is subclass of Shape)
+            Text messageText = new Text("Hello gooey World!\nfrom GUIdemoMain\nin 10-GUI-Basics Project");
              
-            // stack page
+            // stack page (StackPane is subclass Parent)
             StackPane root = new StackPane();
              
             // add Text shape to Stack Pane
             root.getChildren().add(messageText);
-             
+            
+            // Scene is subclass of Stage
             Scene scene = new Scene(root,400,400);
             primaryStage.setScene(scene);
             primaryStage.show();

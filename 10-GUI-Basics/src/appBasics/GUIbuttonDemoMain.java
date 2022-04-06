@@ -20,25 +20,25 @@ public class GUIbuttonDemoMain extends Application {
 			// set title
 			primaryStage.setTitle("New Button and its Action Listener");
 			// create a new Button shape
-		//	Button btn = new Button();
+			Button btn = new Button();
 			// set text inside button
-		//	btn.setText("Display Message");
+			btn.setText("Display Message");
 
 			// action event
-//			EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
-//				public void handle(ActionEvent e) {
-//					btn.setText("Hi there! You clicked the button!");
-//				}
-//			};
+			EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
+				public void handle(ActionEvent e) {
+					btn.setText("Hi there! You clicked the button!");
+				}
+			};
 
 			// when button is pressed
-		//	btn.setOnAction(event);
+			btn.setOnAction(event);
 
 			// stack pane
 			StackPane root = new StackPane();
 
 			// add button to Stack Pane
-		//	root.getChildren().add(btn);
+			root.getChildren().add(btn);
 
 			Scene scene = new Scene(root, 400, 400);
 			primaryStage.setScene(scene);
@@ -52,6 +52,3 @@ public class GUIbuttonDemoMain extends Application {
 // thanks for the sample code to:
 // https://www.tutorialkart.com/javafx/create-new-button-and-set-action-listener-in-javafx/
 // and  https://www.geeksforgeeks.org/javafx-button-with-examples/ 
-
-
-
