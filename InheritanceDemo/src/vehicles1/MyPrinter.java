@@ -7,7 +7,7 @@ public class MyPrinter {
 
 	public static void printThis(ArrayList<Object> bob) {
 		
-		(Vehicle)bob.get(0);
+		bob.get(0);
 	}
 	
 }
