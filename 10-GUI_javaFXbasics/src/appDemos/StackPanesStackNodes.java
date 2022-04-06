@@ -7,8 +7,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -16,16 +14,7 @@ public class StackPanesStackNodes  extends Application {
 
 	@Override
 	public void start(Stage primaryStage) { // the 'Stage' is the Window that will be opened on the desktop
-		try {
-		    // Create a circle and set its properties
-		    Circle circle = new Circle();
-		    circle.setCenterX(100);
-		    circle.setCenterY(100);
-		    circle.setRadius(50);
-		    circle.setStroke(Color.BLACK);
-		    circle.setFill(null);
-			
-			
+		try {		
 			// create a new Text shape
 			Text messageText = new Text("StackPanes pile all of\nthe Nodes that are placed\nin it on top of each other");
 			Text messgTwo = new Text("making\nthis big\na pile\nof words\nto spread\nvertically");
@@ -59,7 +48,7 @@ public class StackPanesStackNodes  extends Application {
 			
 			// try switching the order that things are added to the StackPane
 			
-			myPane.getChildren().add(messgTwo);
+			myStackPane.getChildren().add(messgTwo);
 			
 			// add button to Stack Pane
 			myStackPane.getChildren().add(btn);
@@ -73,8 +62,7 @@ public class StackPanesStackNodes  extends Application {
 			// add button to Stack Pane
 			myStackPane.getChildren().add(otherBtn);
 
-		//	Scene scene = new Scene(myStackPane, 400, 400);
-			Scene scene = new Scene(myPane, 400, 400);
+			Scene scene = new Scene(myStackPane, 400, 400);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {
