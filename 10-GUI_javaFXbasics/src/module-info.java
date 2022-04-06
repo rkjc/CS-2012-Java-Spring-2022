@@ -1,7 +1,7 @@
 module guiJavaFXbasics {
-	requires javafx.base;
-    requires javafx.graphics;
-    requires javafx.controls;
+	requires transitive javafx.base;
+    requires transitive javafx.graphics;
+    requires transitive javafx.controls;
     
     exports app2; 
 }
