@@ -23,6 +23,7 @@ public class ButtonsTextHBoxVBox2 extends Application {
 	// --------------------------------------------------------------------		
 		VBox vbox1 = new VBox(10); // the attribute sets the space between nodes
 		vbox1.setPadding(new Insets(15, 15, 15, 15)); // sets space around the edges
+		vbox1.setStyle("-fx-background-color: GREEN");
 		vbox1.setAlignment(Pos.TOP_CENTER);
 		
 		HBox hbox1 = new HBox(10); // the attribute sets the space between nodes
@@ -48,6 +49,7 @@ public class ButtonsTextHBoxVBox2 extends Application {
 			@Override
 			public void handle(ActionEvent event) {
 				System.out.println("Button One pushed");
+				btn1.setStyle("-fx-background-color: hotpink");
 				txt1.setText("Button ONE pushed");
 				
 			}
@@ -59,6 +61,7 @@ public class ButtonsTextHBoxVBox2 extends Application {
 			@Override
 			public void handle(ActionEvent event) {
 				System.out.println("Button Two pushed");
+				btn1.setStyle("-fx-background-color: BLUE");
 				txt1.setText("Button TWO pushed");
 			}
 		});

@@ -35,6 +35,7 @@ public class ShowBorderPane extends Application {
 
 
 
+
 // Define a custom pane to hold a label in the center of the pane
 class CustomPane extends StackPane {
   public CustomPane(String title) {
