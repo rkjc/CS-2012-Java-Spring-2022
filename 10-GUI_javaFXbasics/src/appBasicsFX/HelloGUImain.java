@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:10-GUI_javaFXbasics/src/app1/HelloGUImain.java
-package app1;
-========
 package appBasicsFX;
->>>>>>>> 39028517800b94cfbcb25c456e42cf44e2161b50:10-GUI_javaFXbasics/src/appBasicsFX/HelloGUImain.java
 
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -25,7 +21,7 @@ public class HelloGUImain extends Application {
 			root.getChildren().add(messageText);
 
 			Scene scene = new Scene(root, 400, 400);
-			// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {

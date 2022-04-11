@@ -14,9 +14,7 @@ public class GUIbuttonDemo  extends Application{
 	@Override
 	public void start(Stage primaryStage) { // the 'Stage' is the Window that will be opened on the desktop
 		try {
-			// create a new Text shape
-			Text messageText = new Text("Learning JavaFX - now with a button!");
-
+			
 			// make a stack page to hold all of the 
 			StackPane root = new StackPane();
 			
@@ -43,8 +41,6 @@ public class GUIbuttonDemo  extends Application{
 			// add button to Stack Pane
 			root.getChildren().add(btn);
 
-			// add Text shape to Stack Pane
-			root.getChildren().add(messageText);
 
 			Scene scene = new Scene(root, 400, 400);
 			// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
