@@ -21,7 +21,6 @@ public class StackPanesStackNodes  extends Application {
 
 			// make a stack page to hold all of the Nodes
 			StackPane myStackPane = new StackPane();
-			Pane myPane = new Pane();
 			
 			//----------------- button code ----------------------
 			// create a new Button (Button is a subclass of Control)

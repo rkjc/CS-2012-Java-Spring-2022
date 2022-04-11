@@ -6,4 +6,5 @@ module guiJavaFXbasics {
     exports examples;
     exports appBasicsFX; 
     exports appDemos; 
+    exports layoutDemos;
 }
