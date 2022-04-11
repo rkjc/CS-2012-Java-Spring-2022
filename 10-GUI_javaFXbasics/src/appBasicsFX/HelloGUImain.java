@@ -1,5 +1,8 @@
+<<<<<<<< HEAD:10-GUI_javaFXbasics/src/app1/HelloGUImain.java
+package app1;
+========
 package appBasicsFX;
-
+>>>>>>>> 39028517800b94cfbcb25c456e42cf44e2161b50:10-GUI_javaFXbasics/src/appBasicsFX/HelloGUImain.java
 
 import javafx.application.Application;
 import javafx.stage.Stage;

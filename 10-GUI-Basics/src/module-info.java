@@ -3,5 +3,5 @@ module guiBasics {
 	requires javafx.base;
 	requires javafx.graphics;
 	
-	exports app;
+	exports appBasics;
 }

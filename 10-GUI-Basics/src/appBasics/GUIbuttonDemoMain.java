@@ -1,4 +1,4 @@
-package app;
+package appBasics;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -52,6 +52,3 @@ public class GUIbuttonDemoMain extends Application {
 // thanks for the sample code to:
 // https://www.tutorialkart.com/javafx/create-new-button-and-set-action-listener-in-javafx/
 // and  https://www.geeksforgeeks.org/javafx-button-with-examples/ 
-
-
-
