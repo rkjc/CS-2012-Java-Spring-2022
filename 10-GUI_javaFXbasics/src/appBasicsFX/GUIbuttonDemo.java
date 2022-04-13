@@ -13,8 +13,7 @@ public class GUIbuttonDemo  extends Application{
 
 	@Override
 	public void start(Stage primaryStage) { // the 'Stage' is the Window that will be opened on the desktop
-		try {
-			
+		try {			
 			// make a stack page to hold all of the 
 			StackPane root = new StackPane();
 			
@@ -27,23 +26,20 @@ public class GUIbuttonDemo  extends Application{
 			btn.setText("Display Message");
 
 			// action event
-			EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
+			EventHandler<ActionEvent> myBtnEvent = new EventHandler<ActionEvent>() {
 				public void handle(ActionEvent e) {
 					btn.setText("Hi there! You clicked the button!");
 				}
 			};
 
 			// when button is pressed
-			btn.setOnAction(event);
-
+			btn.setOnAction(myBtnEvent);
 
 			// ------------- assemble the GUI window -------------
 			// add button to Stack Pane
 			root.getChildren().add(btn);
 
-
-			Scene scene = new Scene(root, 400, 400);
-			// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			Scene scene = new Scene(root, 250, 100);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {
@@ -54,5 +50,4 @@ public class GUIbuttonDemo  extends Application{
 	public static void main(String[] args) {
 		Application.launch(args);
 	}
-
 }
