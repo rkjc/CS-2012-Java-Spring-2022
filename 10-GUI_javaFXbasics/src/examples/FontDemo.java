@@ -20,18 +20,19 @@ public class FontDemo extends Application {
     circle.setRadius(70);
     circle.setStroke(Color.BLACK); 
     //using Color Class
-    //circle.setFill(new Color(0.5, 0.5, 0.5, 0.95));
+    circle.setFill(new Color(0.5, 0.5, 0.5, 0.0));
     //circle.setFill(new Color(1.0, 0.0, 0.1, 0.5));
-    circle.setFill(Color.rgb(0, 255, 0));
+    //circle.setFill(Color.rgb(255, 255, 0));
     
     
     // Create a label and set its properties
     Label label = new Label("JavaFX");
-    label.setFont(Font.font("Times New Roman", FontWeight.BOLD, FontPosture.ITALIC, 20));
+    label.setFont(Font.font("Times New Roman", FontWeight.BOLD, FontPosture.ITALIC, 40));
     
     
-    spane.getChildren().add(circle); // Add circle to the pane
+    
     spane.getChildren().add(label);
+    spane.getChildren().add(circle); // Add circle to the pane
     
 
     // Create a scene and place it in the stage
