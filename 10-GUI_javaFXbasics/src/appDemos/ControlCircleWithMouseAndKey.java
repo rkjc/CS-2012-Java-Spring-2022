@@ -9,7 +9,6 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.HBox;
 import javafx.scene.shape.Circle;
-import javafx.scene.text.Text;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -25,12 +24,13 @@ public class ControlCircleWithMouseAndKey extends Application {
 		Button btEnlarge = new Button("Enlarge");
 		Button btShrink = new Button("Shrink");
 		Label mtxt = new Label("hey there");
+		
 		hBox.getChildren().add(mtxt);
 		hBox.getChildren().add(btEnlarge);
 		hBox.getChildren().add(btShrink);
 
 		// Create and register the handler
-		btEnlarge.setOnAction(e -> myCircle.setRadius(myCircle.getRadius() * 1.2) );
+		btEnlarge.setOnAction(e -> myCircle.setRadius(myCircle.getRadius() * 1.2));
 		btShrink.setOnAction(e -> myCircle.setRadius(myCircle.getRadius() / 1.2));
 
 		BorderPane borderPane = new BorderPane();
@@ -38,7 +38,7 @@ public class ControlCircleWithMouseAndKey extends Application {
 		borderPane.setBottom(hBox);
 		borderPane.setCenter(myCircle);
 		//borderPane.setBottom(btEnlarge);
-		//?? does not see arrow keys if a button is placed anywhere.
+		//?? ONLY see arrow keys when holding a modifier key if a button is placed anywhere.
 	
 
 		// Create a scene and place it in the stage
