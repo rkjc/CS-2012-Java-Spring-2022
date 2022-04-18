@@ -13,17 +13,20 @@ public class HelloGUImain extends Application {
 		try {
 			// create a new Text shape
 			Text messageText = new Text("Hello World! Lets learn JavaFX.");
-
+			//Text messageText2 = new Text("more text for\nthe fun of it, because\nthats what we do");
 			// stack page
-			StackPane root = new StackPane();
+			StackPane groot = new StackPane();
 
 			// add Text shape to Stack Pane
-			root.getChildren().add(messageText);
-
-			Scene scene = new Scene(root, 400, 400);
+			groot.getChildren().add(messageText);
+			//groot.getChildren().add(messageText2);
+			
+			Scene scene = new Scene(groot, 400, 400);
 
 			primaryStage.setScene(scene);
+			
 			primaryStage.show();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
