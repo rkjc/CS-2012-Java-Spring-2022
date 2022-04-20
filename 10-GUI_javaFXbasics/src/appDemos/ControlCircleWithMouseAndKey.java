@@ -48,6 +48,7 @@ public class ControlCircleWithMouseAndKey extends Application {
 		primaryStage.show(); // Display the stage
 
 		myCircle.setOnMouseClicked(e -> {
+			
 			System.out.println(e.getButton());
 			if (e.getButton() == MouseButton.PRIMARY) {
 				myCircle.setRadius(myCircle.getRadius() * 1.1);
@@ -73,7 +74,7 @@ public class ControlCircleWithMouseAndKey extends Application {
 	 */
 	public static void main(String[] args) {
 		launch(args);
-	}
+	} 
 }
 
 

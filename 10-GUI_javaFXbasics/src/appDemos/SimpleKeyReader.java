@@ -22,9 +22,11 @@ public class SimpleKeyReader extends Application {
 		
 		scene.setOnKeyPressed(e -> {
 			System.out.println(e.getCode());
+			
 			if (e.getCode() == KeyCode.UP) {
 				System.out.println("------ you pushed the UP arrow -------");
 			}
+			
 		});
 
 	}
