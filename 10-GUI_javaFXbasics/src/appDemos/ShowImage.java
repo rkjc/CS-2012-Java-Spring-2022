@@ -18,6 +18,12 @@ public class ShowImage extends Application {
 		Pane pane = new HBox(10);
 		pane.setPadding(new Insets(5, 5, 5, 5));
 
+		// *** I recommend against using this method!!!
+		// Use the method shown in "ShowImageUsingFileClass" example
+		// It uses the File class to get and manipulate the image file names
+		
+		
+		
 		// Image image = new Image("mapIcon.gif");
 		Image image;
 		try {

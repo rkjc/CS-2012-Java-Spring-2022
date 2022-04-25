@@ -1,5 +1,6 @@
 package appDemos;
 
+import java.io.File;
 import java.net.URISyntaxException;
 
 import javafx.application.Application;
@@ -19,7 +20,12 @@ public class ShowImageSimple extends Application {
 
 		try {
 			// Image image = new Image("mapIcon.gif");
-			Image image = new Image(getClass().getResource("mapIcon.gif").toURI().toString());
+			File imageFileInfo = new File("mapIcon.gif");
+			
+			
+			Image image = new Image(  imageFileInfo.toURI().toURL().toExternalForm() );
+			//Image image = new Image(  getClass().getResource("mapIcon.gif").toURI().toString()  );
+			
 
 			pane.getChildren().add(new ImageView(image));
 
@@ -27,7 +33,7 @@ public class ShowImageSimple extends Application {
 			primaryStage.setScene(scene); // Place the scene in the stage
 			primaryStage.show(); // Display the stage
 
-		} catch (URISyntaxException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
