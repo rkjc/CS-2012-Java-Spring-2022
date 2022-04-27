@@ -14,10 +14,10 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-public class ShowImageUsingFileChooseMethod extends Application {
+public class ShowImageUsingFileChooseMethod_ver2 extends Application {
 	Image catImage;
 	ImageView centerView;
-	Stage primaryStage2;
+	int pixelSize = 100;
 
 	@Override // Override the start method in the Application class
 	public void start(Stage primaryStage) throws FileNotFoundException, Exception {
@@ -30,7 +30,10 @@ public class ShowImageUsingFileChooseMethod extends Application {
 		// action event
 		EventHandler<ActionEvent> myBtnEvent = new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent e) {
-				bPane.setCenter( getPic(primaryStage) );
+				ImageView theImage = getPic(primaryStage);
+				
+				bPane.setCenter( theImage );
+				primaryStage.sizeToScene();
 			}
 		};
 
@@ -45,29 +48,34 @@ public class ShowImageUsingFileChooseMethod extends Application {
 
 	}
 
-	public ImageView getPic(String fileName) throws Exception {
-		File imageFile1 = new File(fileName);
-		String imgLocStr = imageFile1.toURI().toURL().toExternalForm();
+	public ImageView getPic(File aFile) throws Exception {
+		String imgLocStr = aFile.toURI().toURL().toExternalForm();
 		Image tempImage = new Image(imgLocStr, false); // false => does not load in background, loads immediately
 		ImageView tempImageView = new ImageView(tempImage);
 		tempImageView.setPreserveRatio(true);
-		tempImageView.setFitHeight(300);
-
+		
+		pixelSize = 300;
+		double imgH = tempImage.getHeight();
+		double imgW = tempImage.getWidth();
+		if (imgH > imgW) {
+			tempImageView.setFitHeight(300);
+		} else {
+			tempImageView.setFitWidth(300);
+		}
+		
 		return tempImageView;
+	}
+	
+	public ImageView getPic(String fileName) throws Exception {
+		File imageFile1 = new File(fileName);
+		return getPic(imageFile1);
 	}
 
 	public ImageView getPic(Stage primaryStage) {
 		try {
 			FileChooser tfc = new FileChooser();
 			File imageFile1 = tfc.showOpenDialog(primaryStage);
-			String imgLocStr = imageFile1.toURI().toURL().toExternalForm();
-			Image tempImage = new Image(imgLocStr, false); // false => does not load in background, loads immediately
-			System.out.println(tempImage.getHeight());
-			ImageView tempImageView = new ImageView(tempImage);
-			tempImageView.setPreserveRatio(true);
-			tempImageView.setFitHeight(300);
-
-			return tempImageView;			
+			return getPic(imageFile1);	
 		} catch (Exception e) {
 			System.out.println(e);
 		}
