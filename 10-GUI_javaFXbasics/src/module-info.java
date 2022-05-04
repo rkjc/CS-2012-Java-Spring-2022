@@ -10,5 +10,6 @@ module guiJavaFXbasics {
     exports layoutDemos;
     exports skratchPak;
     exports controls;
+    exports mouseStuff;
   
 }
